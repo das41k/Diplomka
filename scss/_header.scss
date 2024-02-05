@@ -2,7 +2,7 @@
     padding-top: 78px;
 }
 .nav {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     margin-bottom: 50px;
     &__burger-icon {
@@ -11,6 +11,7 @@
         justify-content: center;
         width: 36px;
         height: 36px;
+        cursor: pointer;
     }
     &__burger-icon span {
         display: block;
@@ -106,6 +107,10 @@
         line-height: 118%;
         color: rgb(125, 125, 125);
     }
+    &--closed {
+        visibility: hidden;
+        opacity: 0;
+    }
 }
 .catalog {
     width: 193px;
@@ -135,6 +140,25 @@
     background: rgb(18, 18, 18);
     color: rgb(255, 253, 245);
     min-width: 25%;
+    &--opened {
+        display: block;
+    }
+    &__cross {
+        display: flex;
+        border: 2px solid rgb(81, 74, 126);
+        border-radius: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        right: 10%;
+        top: 5%;
+        cursor: pointer;
+        background: rgb(255, 253, 245);
+        color: rgb(81, 74, 126);
+        font-weight: 900;
+    } 
     &__list {
         margin-top: 6px;
         display: flex;
@@ -146,6 +170,5 @@
         line-height: 16px;
         max-width: 120px;
         padding-left: 18px;
-        padding-right: 140px;
     }
 }

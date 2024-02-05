@@ -38,6 +38,7 @@ body {
           justify-content: center;
   width: 36px;
   height: 36px;
+  cursor: pointer;
 }
 .nav__burger-icon span {
   display: block;
@@ -148,6 +149,10 @@ body {
   line-height: 118%;
   color: rgb(125, 125, 125);
 }
+.kak--closed {
+  visibility: hidden;
+  opacity: 0;
+}
 
 .catalog {
   width: 193px;
@@ -189,6 +194,31 @@ body {
   color: rgb(255, 253, 245);
   min-width: 25%;
 }
+.burger-menu--opened {
+  display: block;
+}
+.burger-menu__cross {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid rgb(81, 74, 126);
+  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  cursor: pointer;
+  background: rgb(255, 253, 245);
+  color: rgb(81, 74, 126);
+  font-weight: 900;
+}
 .burger-menu__list {
   margin-top: 6px;
   display: -webkit-box;
@@ -205,5 +235,4 @@ body {
   line-height: 16px;
   max-width: 120px;
   padding-left: 18px;
-  padding-right: 140px;
 }
