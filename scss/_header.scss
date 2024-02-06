@@ -122,12 +122,22 @@
     align-items: center;
     justify-content: center;
     margin-left: 45%;
+    transition: all .4s;
     &__text {
         color: rgb(81, 74, 126);
         font-size: 20px;
         line-height: 23px;
         text-align: center;
         font-weight: 400;
+    }
+    &:hover {
+        background:rgb(81, 74, 126);
+    }
+    &:hover .catalog__text {
+        color: rgb(255, 253, 245);
+    } 
+    &:hover path {
+        fill: rgb(255, 253, 245);
     }
 }
 .burger-menu {
