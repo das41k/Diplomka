@@ -12,3 +12,15 @@ burgerMenuClose.addEventListener('click', () => {
     burgerMenu.classList.remove('burger-menu--opened')
     kak.classList.remove('kak--closed')
 })
+
+const swiper = new Swiper('.hero__swiper', {
+    // Optional parameters
+    loop: true,
+    spaceBeetwen: 26,
+    slidesPerViev: 2,
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper__button-next',
+        prevEl: '.swiper__button-prev',
+    },
+});
