@@ -13,14 +13,12 @@ burgerMenuClose.addEventListener('click', () => {
     kak.classList.remove('kak--closed')
 })
 
-const swiper = new Swiper('.hero__swiper', {
-    // Optional parameters
+const swiper = new Swiper('.gallery__swiper', {
     loop: true,
-    spaceBeetwen: 26,
-    slidesPerViev: 2,
-    // Navigation arrows
+    spaceBetween: 80,
+    slidesPerView: 4,
     navigation: {
-        nextEl: '.swiper__button-next',
-        prevEl: '.swiper__button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 });
