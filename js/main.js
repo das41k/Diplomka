@@ -22,3 +22,13 @@ const swiper = new Swiper('.gallery__swiper', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+const swiper2 = new Swiper('.reviews__swiper', {
+    loop: true,
+    spaceBetween: 80,
+    slidesPerView: 2,
+    navigation: {
+        nextEl: '.reviews__swiper-button-next',
+        prevEl: '.reviews__swiper-button-prev',
+    },
+});
