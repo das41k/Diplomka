@@ -126,8 +126,8 @@
 .gallery {
     margin-top: 128px;
     &__container {
-        padding-right: 0;
         max-width: 1367;
+        padding-right: 0;
     }
     &__title {
         font-size: 40px;
@@ -151,9 +151,10 @@
     position: relative;
 }
 .swiper-slide {
-    max-width: 279px;
+    min-width: 279px;
+    overflow: hidden;
     &__img img {
-        width: 125%;
+        width: 100%;
     }
     &__img {
         margin-bottom: 13px;
@@ -162,8 +163,7 @@
 .card {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap:75px;
-    min-width: 278px;
+    gap: 75px;
     &__column {
         display: flex;
         flex-direction: column;
@@ -191,7 +191,7 @@
         font-weight: 600;
         line-height: 14px;
         margin-bottom: 13px;
-        min-width: 148px;
+        max-width: 148px;
     }
     &__button {
         background: rgb(255, 253, 245);
@@ -226,19 +226,19 @@
         justify-content: space-between;
     }
 }
-.swiper-button-next {
+.swiper-button-next, .swiper-button-prev {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     padding: 24px 19px 23px 20px;
     background: rgb(255, 253, 245);
-    right: -22%;
-    bottom: 30%;
     z-index: 1;
 }
-
-
+.swiper-button-next {
+    right: -15%;
+    bottom: 30%;
+}
 
 @media (max-width: 450px) {
     .container {
