@@ -121,8 +121,6 @@
         top: -56%; 
     }
 }
-.swiper__button-prev, .swiper__button-next {
-}
 .gallery {
     margin-top: 128px;
     &__container {
@@ -226,7 +224,7 @@
         justify-content: space-between;
     }
 }
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -234,12 +232,9 @@
     padding: 24px 19px 23px 20px;
     background: rgb(255, 253, 245);
     z-index: 1;
-}
-.swiper-button-next {
     right: -15%;
     bottom: 30%;
 }
-
 @media (max-width: 450px) {
     .container {
         max-width: 375px;
