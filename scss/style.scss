@@ -434,5 +434,74 @@
     }
 }
 
+.invite {
+    margin-top: 150px;
+    &__back {
+        background: rgb(81, 74, 126);
+        padding: 39.83px 122px 38.83px 135px;
+        width: 60%;
+    }
+    &__filling {
+        box-shadow: 0px 4px 20px 0px rgba(51, 51, 51, 0.05);
+        padding: 34.85px 52px 41.82px 51px;
+        background: rgb(255, 253, 245);
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 118%;
+        margin-bottom: 40px;
+    }
+    &__form-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        color: rgb(125, 125, 125);
+        font-size: 8px;
+        font-weight: 250;
+        line-height: 118%;
+        margin-bottom: 7px;
+    }
+    &__form-input {
+        border-bottom: 0.5px solid rgb(125, 125, 125);
+        max-width: 228px;
+    }
+    &__question {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+    &__question span {
+        color: rgb(125, 125, 125);
+        font-size: 12px;
+        font-weight: 250;
+        line-height: 118%;
+    }
+    &__button {
+        display: flex;
+        gap: 9px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        background: rgb(81, 74, 126);
+        color: rgb(255, 253, 245);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        padding: 13.94px 13px 13.94px 25px;
+        transition: all .4s;
+    }
+    &__button:hover {
+        background: rgb(255, 253, 245);
+        border: 0.5px solid rgb(81, 74, 126);
+        color: rgb(81, 74, 126);
+    }
+    &__button:hover path {
+        fill: rgb(81, 74, 126);
+    }
+}
+
+
+
 
 

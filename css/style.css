@@ -766,3 +766,87 @@ body {
 .benefit__card-text:last-child {
   min-width: 184px;
 }
+
+.invite {
+  margin-top: 150px;
+}
+.invite__back {
+  background: rgb(81, 74, 126);
+  padding: 39.83px 122px 38.83px 135px;
+  width: 60%;
+}
+.invite__filling {
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(51, 51, 51, 0.05);
+          box-shadow: 0px 4px 20px 0px rgba(51, 51, 51, 0.05);
+  padding: 34.85px 52px 41.82px 51px;
+  background: rgb(255, 253, 245);
+}
+.invite__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 118%;
+  margin-bottom: 40px;
+}
+.invite__form-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  color: rgb(125, 125, 125);
+  font-size: 8px;
+  font-weight: 250;
+  line-height: 118%;
+  margin-bottom: 7px;
+}
+.invite__form-input {
+  border-bottom: 0.5px solid rgb(125, 125, 125);
+  max-width: 228px;
+}
+.invite__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+}
+.invite__question span {
+  color: rgb(125, 125, 125);
+  font-size: 12px;
+  font-weight: 250;
+  line-height: 118%;
+}
+.invite__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 9px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  background: rgb(81, 74, 126);
+  color: rgb(255, 253, 245);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 13.94px 13px 13.94px 25px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.invite__button:hover {
+  background: rgb(255, 253, 245);
+  border: 0.5px solid rgb(81, 74, 126);
+  color: rgb(81, 74, 126);
+}
+.invite__button:hover path {
+  fill: rgb(81, 74, 126);
+}
