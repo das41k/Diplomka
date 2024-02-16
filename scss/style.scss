@@ -124,8 +124,7 @@
 .gallery {
     margin-top: 128px;
     &__container {
-        max-width: 1367;
-        padding-right: 0;
+        max-width: 1367px;
     }
     &__title {
         font-size: 40px;
@@ -150,7 +149,6 @@
 }
 .swiper-slide {
     min-width: 279px;
-    overflow: hidden;
     &__img img {
         width: 100%;
     }
@@ -232,136 +230,87 @@
     padding: 24px 19px 23px 20px;
     background: rgb(255, 253, 245);
     z-index: 1;
-    right: -15%;
-    bottom: 30%;
-}
-@media (max-width: 450px) {
-    .container {
-        max-width: 375px;
-        padding: 0 10px;
-    }
-    .hero {
-        &__title {
-            font-size: 25px;
-            font-weight: 300;
-            line-height: 87.3%;
-            text-align: center;
-            margin-bottom: 30px;
-            gap: 26px;
-        }
-        &__answer {
-            display: flex;
-            gap: 10px;
-        }
-        &__buttons-arrow {
-            display: none;
-        }
-        &__buttons {
-            justify-content: right;
-        }
-        &__buttons-message{
-            width: 29px;
-            height: 29px;
-        }
-        &__buttons-message svg {
-            width: 14.5px;
-            height: 14.5px;
-        }
-    }
-    .answer__element {
-        background: rgb(81, 74, 126);
-        color: rgb(255, 253, 245);
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 118%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 27px 8px 25px 7px;
-        border-radius: 10px;
-        text-align: center; 
-        box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-        min-width: 150px;
-        height: 78px;
-    }
-    .answer__element--five::after, .answer__element--last::before, .answer__element:first-child::before, .answer__element--three::before {
-        display: none;
-    }
-    .swiper__button-prev, .swiper__button-next {
-        display: block;
-    }
-    .answer__element--last, .answer__element--five {
-        margin: 0;
-    }
-    .answer__element--five {
-        margin-right: 10px;
-    }
+    right: 0%;
+    bottom: 50%;
 }
 
 .reviews {
     margin-top: 150px;
+    position: relative;
     &__title {
         font-size: 40px;
         font-weight: 300;
         line-height: 87.3%;
         margin-bottom: 60px;
     }
-
-    &__swiper {
-    }
-
-    &__swiper-wrapper {
-        display: flex;
-        overflow: hidden;
-        gap: 80px;
-    }
-
     &__slide {
         display: flex;
-        gap: 49px;
-        padding: 52.21px 24px 49.79px 24px;
-        max-width: 411px;
         align-items: center;
-    }
-    &__slide-info {
+        gap: 49px;
+        padding: 53px 24px 41px 24px;
     }
 
+    &__slide-img img {
+        width: 100%;
+    }
+    &__slide svg {
+        margin-bottom: 15px;
+    }
     &__slide-text {
-        margin-top: 15px;
         color: rgb(125, 125, 125);
         font-size: 12px;
         font-weight: 300;
         line-height: 170%;
-        margin-bottom: 12px;
-        width: 263px;
-        height: 70px;
-        display: flex;
-        align-items: center;
+        margin-bottom: 22px;
+        min-width: 263px;
     }
-    &__slide-glob {
+    &__slide-call {
         display: flex;
         justify-content: space-between;
     }
+
     &__slide-address {
         font-size: 12px;
         font-weight: 600;
         line-height: 170%;
     }
-
     &__slide-date {
         color: rgb(81, 74, 126);
         font-size: 12px;
         font-weight: 600;
         line-height: 170%;
     }
-
-    &__swiper-button-prev {
+    &__button-next {
+        width: 92px;
+        height: 92px;
+        border-radius: 100%;
+        border: 1px solid rgb(81, 74, 126);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 48px 28px 45px 27px;
+        margin-left: 45%;
+        transition: all .4s;
     }
-    &__swiper-button-next {
+    &__button-next:hover {
+        background: rgb(255, 253, 245);
+        color: rgb(81, 74, 126);
+    }
+    &__button-next:hover path {
+        fill:rgb(81, 74, 126); 
+    }
+    &__add {
+        color: rgb(255, 253, 245);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        border: 0.5px solid rgb(81, 74, 126);
+        background: rgb(81, 74, 126);
+        align-items: center;
+        justify-content: center;
+        padding: 14px 18px 14px 21px;
     }
 }
-
 
 .cooperation {
     margin-top: 150px;
