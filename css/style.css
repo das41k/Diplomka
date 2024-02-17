@@ -634,6 +634,65 @@ body {
   padding: 14px 18px 14px 21px;
 }
 
+.question {
+  margin-top: 150px;
+}
+.question__title {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 87.3%;
+  position: relative;
+  margin-bottom: 97px;
+}
+.question__title span {
+  font-family: Bad Script;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 87.3%;
+  color: rgb(81, 74, 126);
+  position: absolute;
+  top: 125%;
+  bottom: -75%;
+}
+
+.accordion-list {
+  margin-bottom: 32px;
+}
+.accordion-list__control {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 0px 18px 0px;
+  background: rgb(255, 253, 245);
+  border-bottom: 0.5px solid rgb(125, 125, 125);
+  margin-bottom: 58px;
+}
+.accordion-list__control-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.accordion-list__content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.accordion-content__text {
+  color: rgb(125, 125, 125);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 118%;
+}
+
 .cooperation {
   margin-top: 150px;
 }
