@@ -868,3 +868,101 @@ body {
 .invite__button:hover path {
   fill: rgb(81, 74, 126);
 }
+
+.footer {
+  background: rgb(81, 74, 126);
+}
+
+.footer {
+  margin-top: 150px;
+  background: rgb(81, 74, 126);
+  color: rgb(255, 253, 245);
+  padding: 82px 0px 85px 0px;
+}
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 96px;
+}
+
+.footer-info__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+.footer-info__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.footer-room__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+.footer-room__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.footer-contancts__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+.footer-contancts__text {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  max-width: 250px;
+}
+
+.footer-socials__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+.footer-socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.footer-socials__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.footer-socials__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}

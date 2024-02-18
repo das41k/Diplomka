@@ -40,7 +40,7 @@ accordionLists.forEach(el => {
         const accordionItem = accordionControl.parentElement;
         const accordionContent = accordionControl.nextElementSibling;
 
-        if (accordionOpenedItem && accordionOpenedItem != accordionItem) {
+        if (accordionOpenedItem && (accordionItem != accordionOpenedItem)) {
             accordionOpenedItem.classList.remove('accordion-list__item--opened');
             accordionOpenedContent.style.maxHeight = null;
         }
