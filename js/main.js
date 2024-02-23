@@ -14,11 +14,17 @@ burgerMenuClose.addEventListener('click', () => {
 })
 
 const swiper = new Swiper('.gallery__swiper', {
-    spaceBetween: 80,
-    slidesPerView: 4,
+    spaceBetween: 60,
+    slidesPerView: 3,
     navigation: {
         nextEl: '.swiper-button-next',
     },
+    breakpoints: {
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 80,
+        }
+    }
 });
 
 const sipe = new Swiper('.reviews__swiper', {

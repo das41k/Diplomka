@@ -248,6 +248,7 @@
         align-items: center;
         gap: 49px;
         padding: 53px 24px 41px 24px;
+        max-height: 204px;
     }
 
     &__slide-img img {
@@ -417,7 +418,7 @@
     &__cards {
         display: flex;
         justify-content: space-between;
-        gap: 170px;
+        gap: 22px;
     }
     &__card {
         display: flex;
@@ -592,7 +593,7 @@
         gap: 10px;
     }
 }
-
+@import 'varsAndMixin';
 
 
 

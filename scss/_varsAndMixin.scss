@@ -1,0 +1,183 @@
+@media (max-width: 1200px) {
+    .invite {
+        &__back {
+            padding: 10px 35px;
+        }
+    }
+    .answer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+        &__element--five, &__element--last {
+            margin-top: 0%;
+            margin-left: 0%;
+            margin-right: 110px;
+        }
+        &__element--five {
+
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .answer {
+        grid-template-columns: repeat(3,1fr);
+        &__element--five {
+            grid-column:1/2;
+        }
+        &__element--last {
+            grid-column: -1/-2;
+        }
+    }
+}
+@media (max-width: 850px) {
+    .cooperation {
+        &__title {
+            text-align: center;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+    .pluse {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+        &__item {
+            background: rgb(81, 74, 126);
+            padding: 28px 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
+        }
+        &__item-title {
+            color: rgb(255, 253, 245);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 118%;
+            text-align: center;
+        }
+        &__item-text {
+            display: none;
+            overflow: hidden;
+        }
+    }
+    .benefit {
+        &__title {
+            text-align: center;
+
+        }
+        &__cards {
+            flex-direction: column;
+        }
+    }
+    .invite {
+        &__filling {
+            padding: 33px;
+        }
+        &__title {
+            text-align: center;
+            font-size: 12px;
+        }
+        &__button {
+            margin-left: 25%;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .answer {
+        flex-direction: column;
+        margin-left: 32%;
+        align-items: center;
+        &__element--five::after , &__element--last::before, &__element--three::before,  &__element:first-child::before {
+            display: none;
+        }
+        &__element {
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
+            background: rgb(81, 74, 126);
+            color: rgb(255, 253, 245);
+            text-align: center;
+            padding: 27px 12px;
+            min-width: 127px;
+            min-height: 26px;
+        }
+    }
+    .hero {
+        &__title {
+            text-align: center;
+        }
+    }
+    .hero__buttons {
+        justify-content: center;
+        gap: 50px;
+    }
+}
+@media (max-width: 700px) {
+    .hello__img {
+        display: none;
+        overflow: hidden;
+    }
+    .kak {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        &__title {
+            text-align: center;
+        }
+        &__img img {
+            width: 100%;
+        }
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+    }
+    .catalog {
+        margin-left: 30%;
+        margin-bottom: 50px;
+    }
+    .directory {
+        display: flex;
+        flex-direction: column;
+        &__list {
+            background: rgb(81, 74, 126);
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            padding: 22px 32px 16px 38px;
+            gap: 36px;
+            border-radius: 100px;
+        }
+        &__list-item path {
+            fill: rgb(255, 253, 245);
+        }
+        &__list-item:hover path {
+            fill: rgb(255, 253, 245);
+        }
+    }
+    .nav__burger-icon {
+        display: none;
+        overflow: hidden;
+    }
+    .invite {
+        &__back {
+            width: 100%;
+        }
+        &__filling {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        &__button {
+            margin-left: 0%;
+        }
+    }
+}
