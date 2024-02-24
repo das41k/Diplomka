@@ -1,10 +1,23 @@
 const burgerIcon = document.querySelector('.nav__burger-icon')
+const burgerIconTel = document.querySelector('.nav__burger-icon--telephone')
 const burgerMenu = document.querySelector('.burger-menu')
 const kak = document.querySelector('.kak')
+const header = document.querySelector('.header')
 burgerIcon.addEventListener('click', () => {
     if (!burgerMenu.classList.contains('burger-menu--opened')) {
         burgerMenu.classList.add('burger-menu--opened')
         kak.classList.add('kak--closed')
+    }
+})
+burgerIconTel.addEventListener('click', () => {
+    if (!burgerMenu.classList.contains('burger-menu--opened')) {
+        burgerMenu.classList.add('burger-menu--opened')
+        kak.classList.add('kak--closed')
+        header.classList.add('header-menu--open')
+    } else {
+        burgerMenu.classList.remove('burger-menu--opened')
+        kak.classList.remove('kak--closed')
+        header.classList.remove('header-menu--open')
     }
 })
 const burgerMenuClose = document.querySelector('.burger-menu__cross')

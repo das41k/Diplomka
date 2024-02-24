@@ -42,6 +42,11 @@
     display: flex;
     gap: 23px;
     margin-right: 39px;
+    align-items: center;
+    justify-content: center;
+    &__button {
+        background: rgb( 255 , 253 , 245 );
+    }
     &__form {
     }
     &__form-input {
@@ -139,6 +144,9 @@
     &:hover path {
         fill: rgb(255, 253, 245);
     }
+}
+.telephone-menu {
+    display: none;
 }
 .burger-menu {
     display: none;

@@ -11,3 +11,48 @@ body {
     height: 100%;
     position: relative;
 }
+input {
+    background: rgb( 255 , 253 , 245);
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    &-arrow {
+        background: rgb(81, 74, 126);
+        width: 72px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        transition: all .4s;
+        position: fixed;
+        bottom: 5%;
+        left: 0;
+        z-index: 1;
+    }
+    &-message {
+        background: rgb(81, 74, 126);
+        width: 72px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        transition: all .4s;
+        position: fixed;
+        bottom: 5%;
+        right: 0;
+        z-index: 1;
+    }
+    &-message path, &-arrow path {
+        transition: all .4s;
+    }
+    &-message:hover, &-arrow:hover {
+        background: rgb(255, 253, 245);
+        border: 2px solid rgb(81, 74, 126);
+    }
+    &-message:hover path, &-arrow:hover path {
+        fill: rgb(81, 74, 126);
+    }
+}

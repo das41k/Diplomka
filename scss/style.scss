@@ -8,40 +8,6 @@
         line-height: 87.3%;
         margin-bottom: 94px;
     }
-    &__buttons {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__buttons-arrow {
-        background: rgb(81, 74, 126);
-        width: 72px;
-        height: 72px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100%;
-        transition: all .4s;
-    }
-    &__buttons-message {
-        background: rgb(81, 74, 126);
-        width: 72px;
-        height: 72px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 100%;
-        transition: all .4s;
-    }
-    &__buttons-message path, &__buttons-arrow path {
-        transition: all .4s;
-    }
-    &__buttons-message:hover, &__buttons-arrow:hover {
-        background: rgb(255, 253, 245);
-        border: 2px solid rgb(81, 74, 126);
-    }
-    &__buttons-message:hover path, &__buttons-arrow:hover path {
-        fill: rgb(81, 74, 126);
-    }
 }
 .answer {
     display: grid;
@@ -575,13 +541,18 @@
         line-height: 23px;
         margin-bottom: 20px;
     }
-
+    &__item path {
+        transition: all .4s;
+    }
+    &__item:hover path {
+        fill: #da70d6;
+    }
     &__list {
         display: flex;
         gap: 15px;
         margin-bottom: 25px;
     }
-    &__phone {
+    &__phone a {
         display: flex;
         align-items: center;
         gap: 10px;
