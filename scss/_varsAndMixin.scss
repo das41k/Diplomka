@@ -85,9 +85,10 @@
 }
 @media (max-width: 800px) {
     .answer {
-        flex-direction: column;
-        margin-left: 32%;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10%;
+        gap: 10px;
         &__element--five::after , &__element--last::before, &__element--three::before,  &__element:first-child::before {
             display: none;
         }
@@ -100,11 +101,6 @@
             padding: 27px 12px;
             min-width: 127px;
             min-height: 26px;
-        }
-    }
-    .hero {
-        &__title {
-            text-align: center;
         }
     }
     .hero__buttons {
@@ -131,11 +127,12 @@
 }
 @media (max-width: 700px) {
     .header {
-        background: url('../img/headerIMG/Tshort.jpeg') no-repeat fixed;
+        background: url('../img/headerIMG/Rectangle\ 22.png') no-repeat fixed;
         background-size: cover;
     }
     .header-menu--open {
         background:rgb(81, 74, 126);
+        overflow: hidden;
     }
     .nav {
         margin-bottom: 0px;
@@ -296,11 +293,25 @@
     .telephone-menu {
         gap: 20px;
     }
+    .hero__title {
+        text-align: center;
+    }
+    .answer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 35%;
+        gap: 20px;
+    }
+    .reviews__title {
+        text-align: center;
+    }
+    .question__title {
+        text-align: center;
+    }
 }
 @media (max-width: 450px) { 
-    .buttons {
-        display: none;
-    }
     .search__form-input {
         min-width: 150px;
     }

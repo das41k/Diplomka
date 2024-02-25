@@ -216,7 +216,6 @@
         padding: 53px 24px 41px 24px;
         max-height: 204px;
     }
-
     &__slide-img img {
         width: 100%;
     }
@@ -300,7 +299,7 @@
     }
 }
 .accordion-list {
-    margin-bottom: 32px;
+    margin-bottom: 0px;
     &__item {
     }
     &__item--opened {
@@ -313,7 +312,7 @@
         padding: 6px 0px 18px 0px;
         background: rgb(255, 253, 245);
         border-bottom: 0.5px solid rgb(125, 125, 125);
-        margin-bottom: 58px;
+        margin-bottom: 19px;
     }
     &__control-title {
         font-size: 20px;
@@ -332,6 +331,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 118%;
+        margin-bottom: 32px;
     }
 }
 
@@ -562,6 +562,18 @@
         display: flex;
         align-items: center;
         gap: 10px;
+    }
+}
+.input-checkbox {
+    appearance: none;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 0.5px solid rgb(81, 74, 126);
+    border-radius: 50%;
+    transition: all .4s;
+    &:checked {
+        background: rgb(81, 74, 126);
     }
 }
 @import 'varsAndMixin';

@@ -48,28 +48,61 @@ const sipe = new Swiper('.reviews__swiper', {
     },
 });
 
-const accordionLists = document.querySelectorAll(".accordion-list");
+const accordionLists = document.querySelectorAll('.accordion-list');
+
 accordionLists.forEach(el => {
+
     el.addEventListener('click', (e) => {
-        const accordionList = e.currentTarget;
-        const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened');
-        const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content');
+
+        const accordionList = e.currentTarget
+        const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
+        const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
+
         const accordionControl = e.target.closest('.accordion-list__control');
-        if (!accordionControl) return;
+        if (!accordionControl) return
         const accordionItem = accordionControl.parentElement;
         const accordionContent = accordionControl.nextElementSibling;
 
-        if (accordionOpenedItem && (accordionItem != accordionOpenedItem)) {
+        if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
             accordionOpenedItem.classList.remove('accordion-list__item--opened');
             accordionOpenedContent.style.maxHeight = null;
         }
-
         accordionItem.classList.toggle('accordion-list__item--opened');
-        
+
         if (accordionItem.classList.contains('accordion-list__item--opened')) {
             accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
         } else {
             accordionContent.style.maxHeight = null;
         }
-    })
+
+    });
+
+});
+
+const messageIcon = document.querySelector('.buttons-message');
+const messageMenu = document.querySelector('.message');
+const messageMenuClose = document.querySelector('.message__close');
+messageIcon.addEventListener('click', () => {
+    if (!messageMenu.classList.contains('message-open')) {
+        messageMenu.classList.add('message-open');
+        messageIcon.classList.add('buttons-message--close')
+    }
 })
+messageMenuClose.addEventListener('click', () => {
+    if (messageMenu.classList.contains('message-open')) {
+        messageMenu.classList.remove('message-open');
+        messageIcon.classList.remove('buttons-message--close')
+    }
+})
+
+const buttonModalOpen = document.querySelector('.reviews__add');
+const buttonModalClose = document.querySelector('.modal-reviews__close');
+const Modal = document.querySelector('.modal-reviews');
+buttonModalOpen.addEventListener('click', () => {
+    if (!Modal.classList.contains('.modal-reviews--open')) {
+        Modal.classList.add('modal-reviews--open');
+    }
+})
+buttonModalClose.addEventListener('click', () => {
+    Modal.classList.remove('modal-reviews--open');
+});

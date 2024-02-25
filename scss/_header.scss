@@ -149,7 +149,9 @@
     display: none;
 }
 .burger-menu {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
     position: absolute;
     top: 0;
     left: 0;
@@ -159,7 +161,8 @@
     color: rgb(255, 253, 245);
     min-width: 25%;
     &--opened {
-        display: block;
+        opacity: 1;
+        visibility: visible;
     }
     &__cross {
         display: flex;
@@ -167,15 +170,16 @@
         border-radius: 100%;
         justify-content: center;
         align-items: center;
-        width: 36px;
-        height: 36px;
+        width: 30px;
+        height: 30px;
         position: absolute;
         right: 10%;
         top: 5%;
         cursor: pointer;
-        background: rgb(255, 253, 245);
-        color: rgb(81, 74, 126);
-        font-weight: 900;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+        background: rgb(81, 74, 126);
+        color: rgb( 255 , 253 , 245 );
+        font-weight: 300;
     } 
     &__list {
         margin-top: 6px;
