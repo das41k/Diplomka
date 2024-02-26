@@ -41,11 +41,19 @@ const swiper = new Swiper('.gallery__swiper', {
 });
 
 const sipe = new Swiper('.reviews__swiper', {
-    spaceBetween: 80,
+    spaceBetween: 5,
     slidesPerView: 2,
     navigation: {
         nextEl: '.reviews__button-next',
     },
+    breakpoints: {
+        650: {
+            spaceBetween: 80,
+        },
+        600: {
+            spaceBetween: 30,
+        }
+    }
 });
 
 const accordionLists = document.querySelectorAll('.accordion-list');

@@ -30,7 +30,30 @@
         }
     }
 }
+@media (max-width: 900px) {
+    .card {
+        gap: 16px;
+    }
+}
 @media (max-width: 850px) {
+    .swiper-slide--two .reviews__slide-img img {
+        width: 75%;
+    }
+    .reviews {
+        &__slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 49px;
+            padding: 53px 24px 41px 24px;
+            max-width: 459px;
+            text-align: center;
+        }
+        &__slide-img img {
+            width: 75%;
+        }
+    }
     .cooperation {
         &__title {
             text-align: center;
@@ -124,6 +147,50 @@
             }
         }
     }
+    .swiper-slide__img img {
+        border-radius: 50px;
+    }
+    .swiper-button-next {
+        width: 70px;
+        height: 10px;
+        top: 10%;
+        padding: 9px; 
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 3px;
+        &__button {
+            flex-direction: column;
+            font-size: 10px;
+            padding: 3px 9px;
+            gap: 2px;
+        }
+        &__column--two {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+    .reviews {
+        &__button-next {
+            width: 75px;
+            height: 75px;
+            border-radius: 100%;
+            border: 1px solid rgb(81, 74, 126);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 48px 28px 45px 27px;
+            margin-left: 45%;
+            transition: all .4s;
+            position:static;
+            z-index: 2;
+        } 
+    }
 }
 @media (max-width: 700px) {
     .header {
@@ -202,6 +269,7 @@
         align-items: center;
         gap:50px;
         background:rgb(81, 74, 126);
+
         &__item path {
             fill: rgb( 255 , 253 , 245 );
         }
@@ -275,9 +343,22 @@
     }
     
 }
+@media (max-width: 650px) {
+}
 @media (max-width: 550px) {
     .search__form-input {
         min-width: 300px;
+    }
+    .reviews {
+        &__slide-text {
+            margin-bottom: 50%;
+        }
+        &__slide-call {
+            flex-direction: column;
+        }
+    }
+    .swiper-slide--one .reviews__slide-text {
+        padding-top: 30px;
     }
 }
 @media (max-width: 500px) {
@@ -314,5 +395,17 @@
 @media (max-width: 450px) { 
     .search__form-input {
         min-width: 150px;
+    }
+    .reviews {
+        &__slide-text {
+            margin-bottom: 100%;
+        }
+    }
+}
+@media (max-width: 350px) {
+    .reviews {
+        &__slide-text {
+            margin-bottom: 150%;
+        }
     }
 }
