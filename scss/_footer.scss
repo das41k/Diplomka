@@ -1,0 +1,96 @@
+@import 'varsAndMixin';
+.footer {
+    background: $color-button;
+}
+.footer {
+    margin-top: 150px;
+    background: $color-button;
+    color: $bg-color;
+    padding: 82px 0px 85px 0px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 96px;
+    }
+}
+
+.footer-info {
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__item {
+    }
+}
+.footer-room {
+    &__title {
+        @extend %smallTitle;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__item {
+    }
+}
+.footer-contancts {
+
+    &__title {
+        @extend %smallTitle;
+    }
+    &__text {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14px;
+        max-width: 250px;
+    }
+}
+.footer-socials {
+
+    &__title {
+        @extend %smallTitle;
+    }
+    &__item path {
+        transition: $transition;
+    }
+    &__item:hover path {
+        fill: #da70d6;
+    }
+    &__list {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+    &__phone a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    &__time {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.input-checkbox {
+    appearance: none;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: $main-border;
+    border-radius: $radius;
+    transition: $transition;
+    &:checked {
+        background: $color-button;
+    }
+}

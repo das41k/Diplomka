@@ -28,7 +28,7 @@ burgerMenuClose.addEventListener('click', () => {
 
 const swiper = new Swiper('.gallery__swiper', {
     spaceBetween: 60,
-    slidesPerView: 3,
+    slidesPerView: 2,
     navigation: {
         nextEl: '.swiper-button-next',
     },
@@ -36,13 +36,16 @@ const swiper = new Swiper('.gallery__swiper', {
         1200: {
             slidesPerView: 4,
             spaceBetween: 80,
+        },
+        550: {
+            slidesPerView: 3,
         }
     }
 });
 
 const sipe = new Swiper('.reviews__swiper', {
     spaceBetween: 5,
-    slidesPerView: 2,
+    slidesPerView: 1,
     navigation: {
         nextEl: '.reviews__button-next',
     },
@@ -52,6 +55,9 @@ const sipe = new Swiper('.reviews__swiper', {
         },
         600: {
             spaceBetween: 30,
+        },
+        400: {
+            slidesPerView: 2,
         }
     }
 });
@@ -103,14 +109,17 @@ messageMenuClose.addEventListener('click', () => {
     }
 })
 
-const buttonModalOpen = document.querySelector('.reviews__add');
-const buttonModalClose = document.querySelector('.modal-reviews__close');
-const Modal = document.querySelector('.modal-reviews');
-buttonModalOpen.addEventListener('click', () => {
-    if (!Modal.classList.contains('.modal-reviews--open')) {
-        Modal.classList.add('modal-reviews--open');
+const ModalButton = document.querySelector('.reviews__add')
+const Modal = document.querySelector('.modal')
+ModalButton.addEventListener('click', OpenModal)
+Modal.addEventListener('click', closeModal)
+function OpenModal(e) {
+    document.body.classList.toggle('body-modal--opened')
+}
+function closeModal(e) {
+    e.preventDefault
+    const target = e.target
+    if (target.classList.contains('modal__close') || target.classList.contains('modal')) {
+        document.body.classList.remove('body-modal--opened')
     }
-})
-buttonModalClose.addEventListener('click', () => {
-    Modal.classList.remove('modal-reviews--open');
-});
+}
