@@ -1,5 +1,45 @@
 @import 'global';
 @import 'header';
+.background--first {
+    position: absolute;
+    width: 429px;
+    height: 429px;
+    border: 1px solid rgb(81, 74, 126);
+    top: 750px;
+    border-radius: 50%;
+    left: 90%;
+}
+.background--two {
+    position: absolute;
+    width: 429px;
+    height: 429px;
+    border: 1px solid rgb(81, 74, 126);
+    left: 90%;
+    top: 2400px;
+    border-radius: 50%;
+}
+.background--three {
+    position: absolute;
+    width: 429px;
+    height: 429px;
+    border: 1px solid rgb(81, 74, 126);
+    left: 90%;
+    top: 4250px;
+    border-radius: 50%;
+}
+.background--three::before {
+    content: '';
+    display: block;
+    background: rgb(81, 74, 126);
+    position: absolute;
+    border: 1px solid rgb(81, 74, 126);
+    background: rgb(81, 74, 126);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: -25%;
+    right: 30%;
+}
 .hero {
     margin-top: 117px;
     &__title {
@@ -83,9 +123,6 @@
 }
 .gallery {
     margin-top: 128px;
-    &__container {
-        max-width: 1367px;
-    }
     &__title {
         @extend %title;
         position: relative;
@@ -107,6 +144,7 @@
 }
 .swiper-slide {
     max-width: 279px;
+    margin-right: 0px;
     &__img img {
         width: 100%;
     }
@@ -191,7 +229,7 @@
     background: $bg-color;
     z-index: 1;
     right: 0%;
-    bottom: 50%;
+    bottom: 45%;
 }
 .swiper-slide--two .reviews__slide-text {
     padding: 0px;
@@ -202,6 +240,7 @@
 .reviews {
     margin-top: 150px;
     z-index: 1;
+    position: relative;
     &__title {
         font-size: 40px;
         font-weight: 300;
@@ -214,6 +253,7 @@
         gap: 49px;
         padding: 53px 24px 41px 24px;
         max-width: 459px;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
     }
     &__slide-img img {
         width: 100%;
@@ -257,8 +297,8 @@
         margin-left: 45%;
         transition: $transition;
         position: absolute;
-        right: 0%;
-        top: 30%;
+        right: 5%;
+        top: 45%;
         z-index: 2;
     }
     &__button-next:hover {
@@ -355,7 +395,7 @@
     }
     &__item-title {
         font-size: 20px;
-        font-weight: 502;
+        font-weight: 400;
         line-height: 118%;
         text-align: center;
     }
@@ -370,7 +410,7 @@
     margin-top: 60px;
     &__title {
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 87.3%;
         margin-bottom: 60px;
     }
@@ -398,6 +438,7 @@
 
 .invite {
     margin-top: 150px;
+    margin-bottom: 150px;
     &__back {
         background: $color-button;
         padding: 39.83px 122px 38.83px 135px;
@@ -410,7 +451,8 @@
     }
     &__title {
         font-size: 20px;
-        font-weight: 600;
+        color: $main-color;
+        font-weight: 400;
         line-height: 118%;
         margin-bottom: 40px;
     }
@@ -418,7 +460,10 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
-        @include textGrey(14px);
+        color: $grey-color;
+        font-size: 12px;
+        line-height: 118%;
+        font-weight: 250;
         margin-bottom: 7px;
     }
     &__form-input {

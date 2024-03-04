@@ -1,9 +1,9 @@
 @import 'varsAndMixin';
+@import 'global';
 .footer {
     background: $color-button;
 }
 .footer {
-    margin-top: 150px;
     background: $color-button;
     color: $bg-color;
     padding: 82px 0px 85px 0px;
@@ -17,7 +17,7 @@
 .footer-info {
     &__title {
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 23px;
         margin-bottom: 20px;
     }

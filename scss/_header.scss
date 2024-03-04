@@ -1,4 +1,5 @@
 @import 'varsAndMixin';
+@import 'global';
 .header {
     padding-top: 78px;
 }
@@ -125,10 +126,13 @@
     border-radius: $radius;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     margin-left: 45%;
+    gap: 16px;
     transition: $transition;
+    & svg {
+        margin-left: 77px;
+    }
     &__text {
         color: $color-button;
         font-size: 20px;
