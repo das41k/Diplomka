@@ -32,7 +32,11 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     font-weight: 300;
     line-height: 118%;
 }
-
+@media (max-width: 1300px) {
+    .background--two {
+        display: none;
+    }
+}
 @media (max-width: 1200px) {
     .invite {
         &__back {
@@ -142,6 +146,12 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     }
 }
 @media (max-width: 800px) {
+    .background--first {
+        display: none;
+    }
+    .background--three {
+        display: none;
+    }
     .answer {
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -185,7 +195,7 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     .swiper-slide__img img {
         border-radius: 50px;
     }
-    .swiper-button-next {
+    .swiper-button-next, .swiper-button-prev {
         width: 70px;
         height: 10px;
         top: 10%;

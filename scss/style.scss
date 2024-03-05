@@ -2,30 +2,18 @@
 @import 'header';
 .background--first {
     position: absolute;
-    width: 429px;
-    height: 429px;
-    border: 1px solid rgb(81, 74, 126);
     top: 750px;
-    border-radius: 50%;
-    left: 90%;
+    right: 0%;
 }
 .background--two {
     position: absolute;
-    width: 429px;
-    height: 429px;
-    border: 1px solid rgb(81, 74, 126);
-    left: 90%;
+    right: 0%;
     top: 2400px;
-    border-radius: 50%;
 }
 .background--three {
     position: absolute;
-    width: 429px;
-    height: 429px;
-    border: 1px solid rgb(81, 74, 126);
-    left: 90%;
-    top: 4250px;
-    border-radius: 50%;
+    right: 0%;
+    top: 4200px;
 }
 .background--three::before {
     content: '';
@@ -38,7 +26,8 @@
     height: 200px;
     border-radius: 50%;
     top: -25%;
-    right: 30%;
+    right: -25%;
+    overflow: hidden;
 }
 .hero {
     margin-top: 117px;
@@ -230,6 +219,24 @@
     z-index: 1;
     right: 0%;
     bottom: 45%;
+    transition: all .3s;
+}
+.swiper-button-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 24px 19px 23px 20px;
+    background: $bg-color;
+    transform:rotate(180deg);
+    z-index: 1;
+    left: 0%;
+    bottom: 45%;
+    transition: all .3s;
+}
+.swiper-button-disabled.swiper-button-prev, .swiper-button-disabled.swiper-button-next {
+    opacity: 0;
+    visibility: hidden;
 }
 .swiper-slide--two .reviews__slide-text {
     padding: 0px;
@@ -300,6 +307,24 @@
         right: 5%;
         top: 45%;
         z-index: 2;
+        transition: all .3s;
+    }
+    &__button-prev {
+        width: 92px;
+        height: 92px;
+        border-radius: 100%;
+        border: 1px solid rgb(81, 74, 126);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 48px 28px 45px 27px;
+        transition: $transition;
+        position: absolute;
+        left: 5%;
+        top: 45%;
+        z-index: 2;
+        transform: rotate(180deg);
+        transition: all .3s;
     }
     &__button-next:hover {
         background: $bg-color;
@@ -320,7 +345,10 @@
         padding: 14px 18px 14px 21px;
     }
 }
-
+.swiper-button-disabled.reviews__button-prev, .swiper-button-disabled.reviews__button-next {
+    opacity: 0;
+    visibility: hidden;
+}
 .question {
     margin-top: 150px;
     &__title {

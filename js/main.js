@@ -31,6 +31,7 @@ const swiper = new Swiper('.gallery__swiper', {
     slidesPerView: 2,
     navigation: {
         nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
     breakpoints: {
         1200: {
@@ -48,6 +49,7 @@ const sipe = new Swiper('.reviews__swiper', {
     slidesPerView: 1,
     navigation: {
         nextEl: '.reviews__button-next',
+        prevEl: '.reviews__button-prev',
     },
     breakpoints: {
         650: {
