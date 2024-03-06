@@ -136,26 +136,6 @@
   .background--three {
     display: none;
   }
-  .answer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 10%;
-    gap: 10px;
-  }
-  .answer__element--five::after, .answer__element--last::before, .answer__element--three::before, .answer__element:first-child::before {
-    display: none;
-  }
-  .answer__element {
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-    background: rgb(81, 74, 126);
-    color: rgb(255, 253, 245);
-    text-align: center;
-    padding: 27px 12px;
-    min-width: 127px;
-    min-height: 26px;
-  }
   .hero__buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -259,6 +239,22 @@
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
+    padding-top: 11px;
+  }
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-menu--open {
     background: rgb(81, 74, 126);
@@ -267,18 +263,81 @@
   .nav {
     margin-bottom: 0px;
   }
-  .search {
-    border-radius: 10px;
-    background: rgb(255, 253, 245);
-    padding: 10px;
-    margin-left: 10%;
-  }
-  .search__form-input {
-    border-bottom: none;
-  }
   .hello__img {
     display: none;
     overflow: hidden;
+  }
+  .burger-menu__cross {
+    display: none;
+  }
+  .burger-menu__logo {
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+  .directory {
+    display: none;
+  }
+  .search-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    background: rgb(255, 253, 245);
+    border-radius: 10px;
+    width: 100%;
+    gap: 9px;
+  }
+  .search-mobile__button {
+    background: rgb(255, 253, 245);
+  }
+  .search-mobile__form-input::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input:-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .title-mobile {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 87.3%;
+    color: rgb(255, 253, 245);
+    margin-top: 15px;
+    margin-bottom: 16px;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .title-mobile--active {
+    display: block;
+    overflow: visible;
+    opacity: 1;
   }
   .kak {
     margin-top: 170px;
@@ -296,6 +355,7 @@
   }
   .kak__title {
     text-align: center;
+    font-size: 37px;
   }
   .kak__title span {
     color: rgb(255, 253, 245);
@@ -322,7 +382,7 @@
     color: rgb(255, 253, 245);
   }
   .catalog {
-    margin-left: 30%;
+    margin-left: 0%;
     margin-bottom: 50px;
     background-color: rgb(81, 74, 126);
     color: rgb(255, 253, 245);
@@ -340,6 +400,33 @@
     display: none;
     overflow: hidden;
   }
+  .catalog__telephone {
+    display: block;
+    margin-top: 25px;
+  }
+  .telephone__acti {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: rgb(255, 253, 245);
+    border-radius: 10px 10px 0px 0px;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+    padding: 13px 49px 13px 36px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 26px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    visibility: visible;
+    opacity: 1;
+  }
+  .telephone__acti--closed {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
   .telephone-menu {
     padding: 22px 32px 16px 38px;
     -webkit-box-pack: justify;
@@ -353,6 +440,7 @@
             align-items: center;
     gap: 50px;
     background: rgb(81, 74, 126);
+    height: 70px;
   }
   .telephone-menu__item path {
     fill: rgb(255, 253, 245);
@@ -399,23 +487,15 @@
     top: 8px;
   }
   .burger-menu {
-    top: 7%;
+    top: 12%;
     right: 0;
-    bottom: 7%;
+    bottom: -5%;
   }
   .burger-menu__list {
-    margin-top: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
     gap: 20px;
   }
   .burger-menu__item {
@@ -452,9 +532,6 @@
   }
 }
 @media (max-width: 550px) {
-  .search__form-input {
-    min-width: 300px;
-  }
   .reviews__slide-text {
     margin-bottom: 50%;
   }
@@ -475,12 +552,6 @@
   }
 }
 @media (max-width: 500px) {
-  .search {
-    margin-left: 25%;
-  }
-  .search__form-input {
-    min-width: 200px;
-  }
   .kak__title {
     font-size: 40px;
   }
@@ -515,9 +586,6 @@
   }
 }
 @media (max-width: 450px) {
-  .search__form-input {
-    min-width: 150px;
-  }
   .reviews__title {
     text-align: center;
   }
@@ -1119,26 +1187,6 @@ input {
   .background--three {
     display: none;
   }
-  .answer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 10%;
-    gap: 10px;
-  }
-  .answer__element--five::after, .answer__element--last::before, .answer__element--three::before, .answer__element:first-child::before {
-    display: none;
-  }
-  .answer__element {
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-    background: rgb(81, 74, 126);
-    color: rgb(255, 253, 245);
-    text-align: center;
-    padding: 27px 12px;
-    min-width: 127px;
-    min-height: 26px;
-  }
   .hero__buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1242,6 +1290,22 @@ input {
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
+    padding-top: 11px;
+  }
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-menu--open {
     background: rgb(81, 74, 126);
@@ -1250,18 +1314,81 @@ input {
   .nav {
     margin-bottom: 0px;
   }
-  .search {
-    border-radius: 10px;
-    background: rgb(255, 253, 245);
-    padding: 10px;
-    margin-left: 10%;
-  }
-  .search__form-input {
-    border-bottom: none;
-  }
   .hello__img {
     display: none;
     overflow: hidden;
+  }
+  .burger-menu__cross {
+    display: none;
+  }
+  .burger-menu__logo {
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+  .directory {
+    display: none;
+  }
+  .search-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    background: rgb(255, 253, 245);
+    border-radius: 10px;
+    width: 100%;
+    gap: 9px;
+  }
+  .search-mobile__button {
+    background: rgb(255, 253, 245);
+  }
+  .search-mobile__form-input::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input:-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .title-mobile {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 87.3%;
+    color: rgb(255, 253, 245);
+    margin-top: 15px;
+    margin-bottom: 16px;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .title-mobile--active {
+    display: block;
+    overflow: visible;
+    opacity: 1;
   }
   .kak {
     margin-top: 170px;
@@ -1279,6 +1406,7 @@ input {
   }
   .kak__title {
     text-align: center;
+    font-size: 37px;
   }
   .kak__title span {
     color: rgb(255, 253, 245);
@@ -1305,7 +1433,7 @@ input {
     color: rgb(255, 253, 245);
   }
   .catalog {
-    margin-left: 30%;
+    margin-left: 0%;
     margin-bottom: 50px;
     background-color: rgb(81, 74, 126);
     color: rgb(255, 253, 245);
@@ -1323,6 +1451,33 @@ input {
     display: none;
     overflow: hidden;
   }
+  .catalog__telephone {
+    display: block;
+    margin-top: 25px;
+  }
+  .telephone__acti {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: rgb(255, 253, 245);
+    border-radius: 10px 10px 0px 0px;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+    padding: 13px 49px 13px 36px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 26px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    visibility: visible;
+    opacity: 1;
+  }
+  .telephone__acti--closed {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
   .telephone-menu {
     padding: 22px 32px 16px 38px;
     -webkit-box-pack: justify;
@@ -1336,6 +1491,7 @@ input {
             align-items: center;
     gap: 50px;
     background: rgb(81, 74, 126);
+    height: 70px;
   }
   .telephone-menu__item path {
     fill: rgb(255, 253, 245);
@@ -1382,23 +1538,15 @@ input {
     top: 8px;
   }
   .burger-menu {
-    top: 7%;
+    top: 12%;
     right: 0;
-    bottom: 7%;
+    bottom: -5%;
   }
   .burger-menu__list {
-    margin-top: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
     gap: 20px;
   }
   .burger-menu__item {
@@ -1435,9 +1583,6 @@ input {
   }
 }
 @media (max-width: 550px) {
-  .search__form-input {
-    min-width: 300px;
-  }
   .reviews__slide-text {
     margin-bottom: 50%;
   }
@@ -1458,12 +1603,6 @@ input {
   }
 }
 @media (max-width: 500px) {
-  .search {
-    margin-left: 25%;
-  }
-  .search__form-input {
-    min-width: 200px;
-  }
   .kak__title {
     font-size: 40px;
   }
@@ -1498,9 +1637,6 @@ input {
   }
 }
 @media (max-width: 450px) {
-  .search__form-input {
-    min-width: 150px;
-  }
   .reviews__title {
     text-align: center;
   }
@@ -1666,26 +1802,6 @@ input {
   .background--three {
     display: none;
   }
-  .answer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 10%;
-    gap: 10px;
-  }
-  .answer__element--five::after, .answer__element--last::before, .answer__element--three::before, .answer__element:first-child::before {
-    display: none;
-  }
-  .answer__element {
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-    background: rgb(81, 74, 126);
-    color: rgb(255, 253, 245);
-    text-align: center;
-    padding: 27px 12px;
-    min-width: 127px;
-    min-height: 26px;
-  }
   .hero__buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1789,6 +1905,22 @@ input {
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
+    padding-top: 11px;
+  }
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-menu--open {
     background: rgb(81, 74, 126);
@@ -1797,18 +1929,81 @@ input {
   .nav {
     margin-bottom: 0px;
   }
-  .search {
-    border-radius: 10px;
-    background: rgb(255, 253, 245);
-    padding: 10px;
-    margin-left: 10%;
-  }
-  .search__form-input {
-    border-bottom: none;
-  }
   .hello__img {
     display: none;
     overflow: hidden;
+  }
+  .burger-menu__cross {
+    display: none;
+  }
+  .burger-menu__logo {
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+  .directory {
+    display: none;
+  }
+  .search-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    background: rgb(255, 253, 245);
+    border-radius: 10px;
+    width: 100%;
+    gap: 9px;
+  }
+  .search-mobile__button {
+    background: rgb(255, 253, 245);
+  }
+  .search-mobile__form-input::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input:-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .title-mobile {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 87.3%;
+    color: rgb(255, 253, 245);
+    margin-top: 15px;
+    margin-bottom: 16px;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .title-mobile--active {
+    display: block;
+    overflow: visible;
+    opacity: 1;
   }
   .kak {
     margin-top: 170px;
@@ -1826,6 +2021,7 @@ input {
   }
   .kak__title {
     text-align: center;
+    font-size: 37px;
   }
   .kak__title span {
     color: rgb(255, 253, 245);
@@ -1852,7 +2048,7 @@ input {
     color: rgb(255, 253, 245);
   }
   .catalog {
-    margin-left: 30%;
+    margin-left: 0%;
     margin-bottom: 50px;
     background-color: rgb(81, 74, 126);
     color: rgb(255, 253, 245);
@@ -1870,6 +2066,33 @@ input {
     display: none;
     overflow: hidden;
   }
+  .catalog__telephone {
+    display: block;
+    margin-top: 25px;
+  }
+  .telephone__acti {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: rgb(255, 253, 245);
+    border-radius: 10px 10px 0px 0px;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+    padding: 13px 49px 13px 36px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 26px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    visibility: visible;
+    opacity: 1;
+  }
+  .telephone__acti--closed {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
   .telephone-menu {
     padding: 22px 32px 16px 38px;
     -webkit-box-pack: justify;
@@ -1883,6 +2106,7 @@ input {
             align-items: center;
     gap: 50px;
     background: rgb(81, 74, 126);
+    height: 70px;
   }
   .telephone-menu__item path {
     fill: rgb(255, 253, 245);
@@ -1929,23 +2153,15 @@ input {
     top: 8px;
   }
   .burger-menu {
-    top: 7%;
+    top: 12%;
     right: 0;
-    bottom: 7%;
+    bottom: -5%;
   }
   .burger-menu__list {
-    margin-top: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
     gap: 20px;
   }
   .burger-menu__item {
@@ -1982,9 +2198,6 @@ input {
   }
 }
 @media (max-width: 550px) {
-  .search__form-input {
-    min-width: 300px;
-  }
   .reviews__slide-text {
     margin-bottom: 50%;
   }
@@ -2005,12 +2218,6 @@ input {
   }
 }
 @media (max-width: 500px) {
-  .search {
-    margin-left: 25%;
-  }
-  .search__form-input {
-    min-width: 200px;
-  }
   .kak__title {
     font-size: 40px;
   }
@@ -2045,9 +2252,6 @@ input {
   }
 }
 @media (max-width: 450px) {
-  .search__form-input {
-    min-width: 150px;
-  }
   .reviews__title {
     text-align: center;
   }
@@ -2515,6 +2719,10 @@ input {
   padding-top: 78px;
 }
 
+.title-mobile {
+  display: none;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2560,6 +2768,20 @@ input {
 }
 .nav__burger-icon span::before {
   top: 8px;
+}
+
+.nav__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search-mobile {
+  display: none;
 }
 
 .search {
@@ -2702,7 +2924,7 @@ input {
   fill: rgb(255, 253, 245);
 }
 
-.telephone-menu {
+.catalog__telephone {
   display: none;
 }
 
@@ -2712,9 +2934,9 @@ input {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
   -webkit-box-shadow: 0px 4px 20px 0px rgba(51, 51, 51, 0.05);
           box-shadow: 0px 4px 20px 0px rgba(51, 51, 51, 0.05);
   background: rgb(18, 18, 18);
@@ -2786,6 +3008,8 @@ input {
   position: absolute;
   right: 0%;
   top: 4200px;
+  overflow: hidden;
+  padding: 100px 0px 0px 0px;
 }
 
 .background--three::before {
@@ -2798,7 +3022,7 @@ input {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  top: -25%;
+  top: 5%;
   right: -25%;
   overflow: hidden;
 }
@@ -3069,7 +3293,7 @@ input {
 }
 
 .swiper-slide--two .reviews__slide-img img {
-  width: 150%;
+  width: 200%;
 }
 
 .reviews {
@@ -3097,7 +3321,7 @@ input {
           box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
 }
 .reviews__slide-img img {
-  width: 100%;
+  width: 150%;
 }
 .reviews__slide svg {
   margin-bottom: 15px;
@@ -3241,9 +3465,6 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 6px 0px 18px 0px;
   background: rgb(255, 253, 245);
   border-bottom: 0.5px solid rgb(125, 125, 125);
@@ -3582,26 +3803,6 @@ input {
   .background--three {
     display: none;
   }
-  .answer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 10%;
-    gap: 10px;
-  }
-  .answer__element--five::after, .answer__element--last::before, .answer__element--three::before, .answer__element:first-child::before {
-    display: none;
-  }
-  .answer__element {
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-    background: rgb(81, 74, 126);
-    color: rgb(255, 253, 245);
-    text-align: center;
-    padding: 27px 12px;
-    min-width: 127px;
-    min-height: 26px;
-  }
   .hero__buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3705,6 +3906,22 @@ input {
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
+    padding-top: 11px;
+  }
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-menu--open {
     background: rgb(81, 74, 126);
@@ -3713,18 +3930,81 @@ input {
   .nav {
     margin-bottom: 0px;
   }
-  .search {
-    border-radius: 10px;
-    background: rgb(255, 253, 245);
-    padding: 10px;
-    margin-left: 10%;
-  }
-  .search__form-input {
-    border-bottom: none;
-  }
   .hello__img {
     display: none;
     overflow: hidden;
+  }
+  .burger-menu__cross {
+    display: none;
+  }
+  .burger-menu__logo {
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+  .directory {
+    display: none;
+  }
+  .search-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    background: rgb(255, 253, 245);
+    border-radius: 10px;
+    width: 100%;
+    gap: 9px;
+  }
+  .search-mobile__button {
+    background: rgb(255, 253, 245);
+  }
+  .search-mobile__form-input::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input:-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .title-mobile {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 87.3%;
+    color: rgb(255, 253, 245);
+    margin-top: 15px;
+    margin-bottom: 16px;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .title-mobile--active {
+    display: block;
+    overflow: visible;
+    opacity: 1;
   }
   .kak {
     margin-top: 170px;
@@ -3742,6 +4022,7 @@ input {
   }
   .kak__title {
     text-align: center;
+    font-size: 37px;
   }
   .kak__title span {
     color: rgb(255, 253, 245);
@@ -3768,7 +4049,7 @@ input {
     color: rgb(255, 253, 245);
   }
   .catalog {
-    margin-left: 30%;
+    margin-left: 0%;
     margin-bottom: 50px;
     background-color: rgb(81, 74, 126);
     color: rgb(255, 253, 245);
@@ -3786,6 +4067,33 @@ input {
     display: none;
     overflow: hidden;
   }
+  .catalog__telephone {
+    display: block;
+    margin-top: 25px;
+  }
+  .telephone__acti {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: rgb(255, 253, 245);
+    border-radius: 10px 10px 0px 0px;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+    padding: 13px 49px 13px 36px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 26px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    visibility: visible;
+    opacity: 1;
+  }
+  .telephone__acti--closed {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
   .telephone-menu {
     padding: 22px 32px 16px 38px;
     -webkit-box-pack: justify;
@@ -3799,6 +4107,7 @@ input {
             align-items: center;
     gap: 50px;
     background: rgb(81, 74, 126);
+    height: 70px;
   }
   .telephone-menu__item path {
     fill: rgb(255, 253, 245);
@@ -3845,23 +4154,15 @@ input {
     top: 8px;
   }
   .burger-menu {
-    top: 7%;
+    top: 12%;
     right: 0;
-    bottom: 7%;
+    bottom: -5%;
   }
   .burger-menu__list {
-    margin-top: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
     gap: 20px;
   }
   .burger-menu__item {
@@ -3898,9 +4199,6 @@ input {
   }
 }
 @media (max-width: 550px) {
-  .search__form-input {
-    min-width: 300px;
-  }
   .reviews__slide-text {
     margin-bottom: 50%;
   }
@@ -3921,12 +4219,6 @@ input {
   }
 }
 @media (max-width: 500px) {
-  .search {
-    margin-left: 25%;
-  }
-  .search__form-input {
-    min-width: 200px;
-  }
   .kak__title {
     font-size: 40px;
   }
@@ -3961,9 +4253,6 @@ input {
   }
 }
 @media (max-width: 450px) {
-  .search__form-input {
-    min-width: 150px;
-  }
   .reviews__title {
     text-align: center;
   }
@@ -4129,26 +4418,6 @@ input {
   .background--three {
     display: none;
   }
-  .answer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 10%;
-    gap: 10px;
-  }
-  .answer__element--five::after, .answer__element--last::before, .answer__element--three::before, .answer__element:first-child::before {
-    display: none;
-  }
-  .answer__element {
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-    background: rgb(81, 74, 126);
-    color: rgb(255, 253, 245);
-    text-align: center;
-    padding: 27px 12px;
-    min-width: 127px;
-    min-height: 26px;
-  }
   .hero__buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -4252,6 +4521,22 @@ input {
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
+    padding-top: 11px;
+  }
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-menu--open {
     background: rgb(81, 74, 126);
@@ -4260,18 +4545,81 @@ input {
   .nav {
     margin-bottom: 0px;
   }
-  .search {
-    border-radius: 10px;
-    background: rgb(255, 253, 245);
-    padding: 10px;
-    margin-left: 10%;
-  }
-  .search__form-input {
-    border-bottom: none;
-  }
   .hello__img {
     display: none;
     overflow: hidden;
+  }
+  .burger-menu__cross {
+    display: none;
+  }
+  .burger-menu__logo {
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+  .directory {
+    display: none;
+  }
+  .search-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    background: rgb(255, 253, 245);
+    border-radius: 10px;
+    width: 100%;
+    gap: 9px;
+  }
+  .search-mobile__button {
+    background: rgb(255, 253, 245);
+  }
+  .search-mobile__form-input::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input:-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .title-mobile {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 87.3%;
+    color: rgb(255, 253, 245);
+    margin-top: 15px;
+    margin-bottom: 16px;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .title-mobile--active {
+    display: block;
+    overflow: visible;
+    opacity: 1;
   }
   .kak {
     margin-top: 170px;
@@ -4289,6 +4637,7 @@ input {
   }
   .kak__title {
     text-align: center;
+    font-size: 37px;
   }
   .kak__title span {
     color: rgb(255, 253, 245);
@@ -4315,7 +4664,7 @@ input {
     color: rgb(255, 253, 245);
   }
   .catalog {
-    margin-left: 30%;
+    margin-left: 0%;
     margin-bottom: 50px;
     background-color: rgb(81, 74, 126);
     color: rgb(255, 253, 245);
@@ -4333,6 +4682,33 @@ input {
     display: none;
     overflow: hidden;
   }
+  .catalog__telephone {
+    display: block;
+    margin-top: 25px;
+  }
+  .telephone__acti {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: rgb(255, 253, 245);
+    border-radius: 10px 10px 0px 0px;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+    padding: 13px 49px 13px 36px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 26px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    visibility: visible;
+    opacity: 1;
+  }
+  .telephone__acti--closed {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
   .telephone-menu {
     padding: 22px 32px 16px 38px;
     -webkit-box-pack: justify;
@@ -4346,6 +4722,7 @@ input {
             align-items: center;
     gap: 50px;
     background: rgb(81, 74, 126);
+    height: 70px;
   }
   .telephone-menu__item path {
     fill: rgb(255, 253, 245);
@@ -4392,23 +4769,15 @@ input {
     top: 8px;
   }
   .burger-menu {
-    top: 7%;
+    top: 12%;
     right: 0;
-    bottom: 7%;
+    bottom: -5%;
   }
   .burger-menu__list {
-    margin-top: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
     gap: 20px;
   }
   .burger-menu__item {
@@ -4445,9 +4814,6 @@ input {
   }
 }
 @media (max-width: 550px) {
-  .search__form-input {
-    min-width: 300px;
-  }
   .reviews__slide-text {
     margin-bottom: 50%;
   }
@@ -4468,12 +4834,6 @@ input {
   }
 }
 @media (max-width: 500px) {
-  .search {
-    margin-left: 25%;
-  }
-  .search__form-input {
-    min-width: 200px;
-  }
   .kak__title {
     font-size: 40px;
   }
@@ -4508,9 +4868,6 @@ input {
   }
 }
 @media (max-width: 450px) {
-  .search__form-input {
-    min-width: 150px;
-  }
   .reviews__title {
     text-align: center;
   }
@@ -4990,7 +5347,15 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 96px;
+  gap: 97px;
+}
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .footer-info__title {
@@ -5214,26 +5579,6 @@ input {
   .background--three {
     display: none;
   }
-  .answer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 10%;
-    gap: 10px;
-  }
-  .answer__element--five::after, .answer__element--last::before, .answer__element--three::before, .answer__element:first-child::before {
-    display: none;
-  }
-  .answer__element {
-    border-radius: 10px;
-    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-    background: rgb(81, 74, 126);
-    color: rgb(255, 253, 245);
-    text-align: center;
-    padding: 27px 12px;
-    min-width: 127px;
-    min-height: 26px;
-  }
   .hero__buttons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -5337,6 +5682,22 @@ input {
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
+    padding-top: 11px;
+  }
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-menu--open {
     background: rgb(81, 74, 126);
@@ -5345,18 +5706,81 @@ input {
   .nav {
     margin-bottom: 0px;
   }
-  .search {
-    border-radius: 10px;
-    background: rgb(255, 253, 245);
-    padding: 10px;
-    margin-left: 10%;
-  }
-  .search__form-input {
-    border-bottom: none;
-  }
   .hello__img {
     display: none;
     overflow: hidden;
+  }
+  .burger-menu__cross {
+    display: none;
+  }
+  .burger-menu__logo {
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+  .directory {
+    display: none;
+  }
+  .search-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    background: rgb(255, 253, 245);
+    border-radius: 10px;
+    width: 100%;
+    gap: 9px;
+  }
+  .search-mobile__button {
+    background: rgb(255, 253, 245);
+  }
+  .search-mobile__form-input::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-moz-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input:-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::-ms-input-placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .search-mobile__form-input::placeholder {
+    font-size: 12px;
+    font-weight: 250;
+    line-height: 14px;
+    color: rgb(125, 125, 125);
+  }
+  .title-mobile {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 87.3%;
+    color: rgb(255, 253, 245);
+    margin-top: 15px;
+    margin-bottom: 16px;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .title-mobile--active {
+    display: block;
+    overflow: visible;
+    opacity: 1;
   }
   .kak {
     margin-top: 170px;
@@ -5374,6 +5798,7 @@ input {
   }
   .kak__title {
     text-align: center;
+    font-size: 37px;
   }
   .kak__title span {
     color: rgb(255, 253, 245);
@@ -5400,7 +5825,7 @@ input {
     color: rgb(255, 253, 245);
   }
   .catalog {
-    margin-left: 30%;
+    margin-left: 0%;
     margin-bottom: 50px;
     background-color: rgb(81, 74, 126);
     color: rgb(255, 253, 245);
@@ -5418,6 +5843,33 @@ input {
     display: none;
     overflow: hidden;
   }
+  .catalog__telephone {
+    display: block;
+    margin-top: 25px;
+  }
+  .telephone__acti {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: rgb(255, 253, 245);
+    border-radius: 10px 10px 0px 0px;
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+    padding: 13px 49px 13px 36px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 26px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    visibility: visible;
+    opacity: 1;
+  }
+  .telephone__acti--closed {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
   .telephone-menu {
     padding: 22px 32px 16px 38px;
     -webkit-box-pack: justify;
@@ -5431,6 +5883,7 @@ input {
             align-items: center;
     gap: 50px;
     background: rgb(81, 74, 126);
+    height: 70px;
   }
   .telephone-menu__item path {
     fill: rgb(255, 253, 245);
@@ -5477,23 +5930,15 @@ input {
     top: 8px;
   }
   .burger-menu {
-    top: 7%;
+    top: 12%;
     right: 0;
-    bottom: 7%;
+    bottom: -5%;
   }
   .burger-menu__list {
-    margin-top: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
     gap: 20px;
   }
   .burger-menu__item {
@@ -5530,9 +5975,6 @@ input {
   }
 }
 @media (max-width: 550px) {
-  .search__form-input {
-    min-width: 300px;
-  }
   .reviews__slide-text {
     margin-bottom: 50%;
   }
@@ -5553,12 +5995,6 @@ input {
   }
 }
 @media (max-width: 500px) {
-  .search {
-    margin-left: 25%;
-  }
-  .search__form-input {
-    min-width: 200px;
-  }
   .kak__title {
     font-size: 40px;
   }
@@ -5593,9 +6029,6 @@ input {
   }
 }
 @media (max-width: 450px) {
-  .search__form-input {
-    min-width: 150px;
-  }
   .reviews__title {
     text-align: center;
   }

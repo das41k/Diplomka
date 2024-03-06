@@ -10,7 +10,11 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        gap: 96px;
+        gap: 97px;
+    }
+    &__logo {
+        display: flex;
+        align-items: end;
     }
 }
 

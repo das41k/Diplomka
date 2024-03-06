@@ -14,6 +14,8 @@
     position: absolute;
     right: 0%;
     top: 4200px;
+    overflow: hidden;
+    padding: 100px 0px 0px 0px;
 }
 .background--three::before {
     content: '';
@@ -25,7 +27,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    top: -25%;
+    top: 5%;
     right: -25%;
     overflow: hidden;
 }
@@ -242,7 +244,7 @@
     padding: 0px;
 }
 .swiper-slide--two .reviews__slide-img img {
-    width: 150%;
+    width: 200%;
 }
 .reviews {
     margin-top: 150px;
@@ -263,7 +265,7 @@
         box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
     }
     &__slide-img img {
-        width: 100%;
+        width: 150%;
     }
     &__slide svg {
         margin-bottom: 15px;
@@ -377,7 +379,6 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 6px 0px 18px 0px;
         background: $bg-color;
         border-bottom: 0.5px solid rgb(125, 125, 125);

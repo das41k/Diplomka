@@ -152,25 +152,7 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     .background--three {
         display: none;
     }
-    .answer {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        margin-left: 10%;
-        gap: 10px;
-        &__element--five::after , &__element--last::before, &__element--three::before,  &__element:first-child::before {
-            display: none;
-        }
-        &__element {
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.4);
-            background: rgb(81, 74, 126);
-            color: rgb(255, 253, 245);
-            text-align: center;
-            padding: 27px 12px;
-            min-width: 127px;
-            min-height: 26px;
-        }
-    }
+    
     .hero__buttons {
         justify-content: center;
         gap: 50px;
@@ -241,6 +223,13 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     .header {
         background: url('../img/headerIMG/Rectangle\ 22.png') no-repeat fixed;
         background-size: cover;
+        padding-top:11px;
+        &__info {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
     .header-menu--open {
         background:rgb(81, 74, 126);
@@ -249,18 +238,53 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     .nav {
         margin-bottom: 0px;
     }
-    .search {
-        border-radius: 10px;
-        background: rgb(255, 253, 245);
-        padding: 10px;
-        margin-left: 10%;
-    }
-    .search__form-input {
-        border-bottom: none;
-    }
     .hello__img {
         display: none;
         overflow: hidden;
+    }
+    .burger-menu__cross {
+        display: none;
+    }
+    .burger-menu__logo {
+        margin-top: 32px;
+        margin-bottom: 0px;
+    }
+    .directory {
+        display: none;
+    }
+    .search-mobile {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background: $bg-color;
+        border-radius: 10px;
+        width: 100%;
+        gap: 9px;
+        &__button {
+            background: $bg-color;
+        }
+        &__form-input::placeholder {
+            font-size: 12px;
+            font-weight: 250;
+            line-height: 14px;
+            color: $grey-color;
+        }    
+    }
+    .title-mobile {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 87.3%;
+        color: $bg-color;
+        margin-top: 15px;
+        margin-bottom: 16px;
+        text-align: center;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .title-mobile--active {
+        display: block;
+        overflow: visible;
+        opacity: 1;
     }
     .kak {
         margin-top: 170px;
@@ -271,6 +295,7 @@ $main-border: 0.5px solid rgb(81, 74, 126);
         color: rgb(255, 253, 245);
         &__title {
             text-align: center;
+            font-size: 37px;
         }
         &__title span {
             color: rgb(255, 253, 245);
@@ -289,7 +314,7 @@ $main-border: 0.5px solid rgb(81, 74, 126);
         }
     }
     .catalog {
-        margin-left: 30%;
+        margin-left: 0%;
         margin-bottom: 50px;
         background-color: rgb(81, 74, 126);
         color:rgb(255, 253, 245);
@@ -300,12 +325,34 @@ $main-border: 0.5px solid rgb(81, 74, 126);
             fill: rgb(255, 253, 245);
         }
     }
+
     .catalog:hover {
         color: rgb(255, 253, 245);
     }
     .directory__list {
         display: none;
         overflow: hidden;
+    }
+    .catalog__telephone {
+        display: block;
+        margin-top: 25px; 
+    }
+    .telephone__acti {
+        display: flex;
+        background: $bg-color;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 0px 4px 10px 0px rgba(81, 74, 126, 0.2);
+        padding: 13px 49px 13px 36px;
+        justify-content: space-between;
+        gap: 26px;
+        transition: $transition;
+        visibility: visible;
+        opacity: 1;
+        &--closed {
+            visibility: hidden;
+            opacity: 0;
+            display: none;
+        }
     }
     .telephone-menu {
         padding: 22px 32px 16px 38px;
@@ -314,7 +361,7 @@ $main-border: 0.5px solid rgb(81, 74, 126);
         align-items: center;
         gap:50px;
         background:rgb(81, 74, 126);
-
+        height: 70px;
         &__item path {
             fill: rgb( 255 , 253 , 245 );
         }
@@ -355,15 +402,11 @@ $main-border: 0.5px solid rgb(81, 74, 126);
         }
     }
     .burger-menu {
-        top: 7%;
+        top: 12%;
         right: 0;
-        bottom: 7%;
+        bottom: -5%;
         &__list {
-            margin-top: 100px;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
             gap: 20px;
         }
         &__item {
@@ -391,13 +434,10 @@ $main-border: 0.5px solid rgb(81, 74, 126);
         width: 130%;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
 }
 @media (max-width: 550px) {
-    .search__form-input {
-        min-width: 300px;
-    }
     .reviews {
         &__slide-text {
             margin-bottom: 50%;
@@ -417,12 +457,6 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     }
 }
 @media (max-width: 500px) {
-    .search {
-        margin-left: 25%;
-    }
-    .search__form-input {
-        min-width: 200px;
-    }
     .kak__title {
         font-size: 40px;
     }
@@ -448,9 +482,6 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     }
 }
 @media (max-width: 450px) { 
-    .search__form-input {
-        min-width: 150px;
-    }
     .reviews {
         &__title {
             text-align: center;

@@ -3,6 +3,8 @@ const burgerIconTel = document.querySelector('.nav__burger-icon--telephone')
 const burgerMenu = document.querySelector('.burger-menu')
 const kak = document.querySelector('.kak')
 const header = document.querySelector('.header')
+const acti = document.querySelector('.telephone__acti')
+const titleMobile = document.querySelector('.title-mobile')
 burgerIcon.addEventListener('click', () => {
     if (!burgerMenu.classList.contains('burger-menu--opened')) {
         burgerMenu.classList.add('burger-menu--opened')
@@ -14,10 +16,14 @@ burgerIconTel.addEventListener('click', () => {
         burgerMenu.classList.add('burger-menu--opened')
         kak.classList.add('kak--closed')
         header.classList.add('header-menu--open')
+        acti.classList.add('telephone__acti--closed')
+        titleMobile.classList.add('title-mobile--active')
     } else {
         burgerMenu.classList.remove('burger-menu--opened')
         kak.classList.remove('kak--closed')
         header.classList.remove('header-menu--open')
+        acti.classList.remove('telephone__acti--closed')
+        titleMobile.classList.remove('title-mobile--active')
     }
 })
 const burgerMenuClose = document.querySelector('.burger-menu__cross')
@@ -125,3 +131,12 @@ function closeModal(e) {
         document.body.classList.remove('body-modal--opened')
     }
 }
+const heroSwiper = document.querySelector('.hero__swiper')
+const heroAnswer = document.querySelector('.answer')
+const answerElem = document.querySelector('.answer__element')
+if (document.documentElement.clientWidth < 800) {
+    heroSwiper.classList.add('swiper')
+    heroAnswer.classList.add('swiper-wrapper')
+    answerElem.classList.add('swiper-slide')
+}
+
