@@ -51,21 +51,19 @@ const swiper = new Swiper('.gallery__swiper', {
 });
 
 const sipe = new Swiper('.reviews__swiper', {
-    spaceBetween: 5,
-    slidesPerView: 1,
+    spaceBetween: 25,
+    slidesPerView: 2,
+    pagination: {
+        el: '.swiper-pagination',
+    },
     navigation: {
         nextEl: '.reviews__button-next',
         prevEl: '.reviews__button-prev',
     },
     breakpoints: {
-        650: {
+        1100: {
             spaceBetween: 80,
-        },
-        600: {
-            spaceBetween: 30,
-        },
-        400: {
-            slidesPerView: 2,
+            slidesPerView: 2, 
         }
     }
 });
@@ -131,12 +129,17 @@ function closeModal(e) {
         document.body.classList.remove('body-modal--opened')
     }
 }
-const heroSwiper = document.querySelector('.hero__swiper')
-const heroAnswer = document.querySelector('.answer')
-const answerElem = document.querySelector('.answer__element')
-if (document.documentElement.clientWidth < 800) {
-    heroSwiper.classList.add('swiper')
-    heroAnswer.classList.add('swiper-wrapper')
-    answerElem.classList.add('swiper-slide')
-}
+const swiperHero = new Swiper('.hero__swiper-mobile', {
+    spaceBetween: 24,
+    slidesPerView: 2,
+    navigation: {
+        nextEl: '.hero-button-next',
+        prevEl: '.hero-button-prev',
+    },
+    breakpoints: {
+        500: {
+            slidesPerView: 3,
+        }
+    }
+});
 
