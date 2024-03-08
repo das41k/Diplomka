@@ -51,10 +51,12 @@ const swiper = new Swiper('.gallery__swiper', {
 });
 
 const sipe = new Swiper('.reviews__swiper', {
-    spaceBetween: 25,
+    spaceBetween: 15,
     slidesPerView: 2,
     pagination: {
         el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
     },
     navigation: {
         nextEl: '.reviews__button-next',
@@ -143,3 +145,26 @@ const swiperHero = new Swiper('.hero__swiper-mobile', {
     }
 });
 
+
+const accordionListsMob = document.querySelectorAll('.accordion-footer__list');
+
+accordionListsMob.forEach(el => {
+
+    el.addEventListener('click', (e) => {
+
+        const accordionControlMob = e.target.closest('.accordion-footer__control');
+        if (!accordionControlMob) return
+        const accordionItemMob = accordionControlMob.parentElement;
+        const accordionContentMob = accordionControlMob.nextElementSibling;
+
+        accordionItemMob.classList.toggle('accordion-list__item--opened');
+
+        if (accordionItemMob.classList.contains('accordion-list__item--opened')) {
+            accordionContentMob.style.maxHeight = accordionContentMob.scrollHeight + 'px';
+        } else {
+            accordionContentMob.style.maxHeight = null;
+        }
+
+    });
+
+});
