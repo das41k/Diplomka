@@ -1,6 +1,5 @@
 @import 'global';
 @import 'header';
-
 .background--first {
     position: absolute;
     top: 750px;
@@ -276,7 +275,7 @@
     &__price {
         color: $main-color;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 16px;
         margin-bottom: 13px;
     }
@@ -291,7 +290,7 @@
     &__text {
         color: $grey-color;
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 14px;
         margin-bottom: 13px;
         max-width: 148px;
@@ -307,7 +306,7 @@
         max-width: 148px;
         color: $main-color;
         font-size: 14px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 16px;
         transition: $transition;
     }
@@ -407,13 +406,13 @@
 
     &__slide-address {
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 170%;
     }
     &__slide-date {
         color: $color-button;
         font-size: 12px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 170%;
     }
     &__button-next {

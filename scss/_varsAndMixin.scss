@@ -480,6 +480,16 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     .gallery__title span {
         font-size: 25px;
     }
+    .cooperation__title {
+        font-size: 25px;
+    }
+    .cooperation__text {
+        font-size: 12px;
+    }
+    .benefit__title {
+        font-size: 25px;
+        font-weight: 300;
+    }
     .gallery__title {
         text-align: center;
     }
@@ -499,6 +509,9 @@ $main-border: 0.5px solid rgb(81, 74, 126);
         font-weight: 300;
         line-height: 87.3%;
         text-align: center;
+        span {
+            right: 0%;
+        }
     }
     .question__title span {
         font-size: 25px;
@@ -511,6 +524,9 @@ $main-border: 0.5px solid rgb(81, 74, 126);
         font-size: 12px;
         line-height: 14px;
     }
+    .accordion-content__text {
+        font-size: 10px;
+    }
     .footer__inner {
         display: none;
     }
@@ -520,6 +536,7 @@ $main-border: 0.5px solid rgb(81, 74, 126);
 }
 @media (max-width: 550px) {
     .reviews__slide {
+        height: 140px;
         &-info {
             display: flex;
             flex-direction: column;
@@ -576,7 +593,10 @@ $main-border: 0.5px solid rgb(81, 74, 126);
         overflow: scroll;
     }
 }
-@media (max-width: 450px) { 
+@media (max-width: 450px) {
+    .input-checkbox {
+        border-radius: 50%;
+    } 
     .swiper-slide__img img {
         width: 120%;
     }

@@ -52,7 +52,7 @@ const swiper = new Swiper('.gallery__swiper', {
 
 const sipe = new Swiper('.reviews__swiper', {
     spaceBetween: 15,
-    slidesPerView: 2,
+    slidesPerView: 1,
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
@@ -65,6 +65,10 @@ const sipe = new Swiper('.reviews__swiper', {
     breakpoints: {
         1100: {
             spaceBetween: 80,
+            slidesPerView: 2, 
+        },
+        550: {
+            spaceBetween: 15,
             slidesPerView: 2, 
         }
     }

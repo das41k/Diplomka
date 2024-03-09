@@ -1,5 +1,4 @@
 @import 'varsAndMixin';
-@import 'global';
 .footer {
     background: $color-button;
 }
@@ -116,11 +115,19 @@
 .mobile-socials__title {
     margin-bottom: 20px;
     color: rgba(255, 253, 245, 0.8);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 12px;
 }
-
+.mobile-socials__phone, .mobile-socials__time {
+    font-size: 10px;
+    & svg {
+        display: none;
+    }
+}
+.mobile-socials__phone { 
+    margin-bottom: 14px;
+}
 .accordion-footer {
     &__list {
         display: flex;
@@ -138,7 +145,7 @@
         width: 150px;
         color: rgba(255, 253, 245, 0.8);
         border-bottom: 0.5px solid rgba(255, 253, 245, 0.8);
-        font-size: 16px;
+        font-size: 12px;
     }
     &__content {
         max-height: 0;
@@ -157,7 +164,7 @@
     flex-direction: column;
     gap: 10px;
     max-width: 450px;
-    font-size: 14px;
+    font-size: 10px;
     &__text {
         color: $bg-color;
         font-size: 12px;
