@@ -243,6 +243,9 @@
   }
 }
 @media (max-width: 700px) {
+  .message, .buttons-arrow, .buttons-message {
+    bottom: 15%;
+  }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
@@ -698,6 +701,18 @@
 @media (max-width: 350px) {
   .accordion-list__control-title {
     text-align: left;
+  }
+  .footer-mobile__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 body {
@@ -1381,6 +1396,9 @@ input {
   }
 }
 @media (max-width: 700px) {
+  .message, .buttons-arrow, .buttons-message {
+    bottom: 15%;
+  }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
@@ -1837,6 +1855,18 @@ input {
   .accordion-list__control-title {
     text-align: left;
   }
+  .footer-mobile__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .header {
   padding-top: 78px;
@@ -2049,6 +2079,11 @@ input {
 
 .catalog__telephone {
   display: none;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  z-index: 2;
 }
 
 .burger-menu {
@@ -3213,6 +3248,9 @@ input {
   }
 }
 @media (max-width: 700px) {
+  .message, .buttons-arrow, .buttons-message {
+    bottom: 15%;
+  }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
@@ -3669,6 +3707,18 @@ input {
   .accordion-list__control-title {
     text-align: left;
   }
+  .footer-mobile__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .footer {
   background: rgb(81, 74, 126);
@@ -3677,7 +3727,7 @@ input {
 .footer {
   background: rgb(81, 74, 126);
   color: rgb(255, 253, 245);
-  padding: 82px 0px 85px 0px;
+  padding: 82px 0px 200px 0px;
 }
 .footer__inner {
   display: -webkit-box;
@@ -3793,11 +3843,9 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 26px;
+  gap: 10px;
   color: rgb(255, 253, 245);
+  gap: 10px;
 }
 
 .mobile-socials__title {
@@ -4126,6 +4174,9 @@ input {
   }
 }
 @media (max-width: 700px) {
+  .message, .buttons-arrow, .buttons-message {
+    bottom: 15%;
+  }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
@@ -4581,5 +4632,17 @@ input {
 @media (max-width: 350px) {
   .accordion-list__control-title {
     text-align: left;
+  }
+  .footer-mobile__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

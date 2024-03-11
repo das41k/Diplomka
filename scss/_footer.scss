@@ -5,7 +5,7 @@
 .footer {
     background: $color-button;
     color: $bg-color;
-    padding: 82px 0px 85px 0px;
+    padding: 82px 0px 200px 0px;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -107,9 +107,9 @@
     }
     &__inner {
         display: flex;
-        justify-content: space-between;
-        gap:26px;
+        gap:10px;
         color: $bg-color;
+        gap: 10px;
     }
 }
 .mobile-socials__title {
