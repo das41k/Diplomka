@@ -243,6 +243,9 @@
   }
 }
 @media (max-width: 700px) {
+  .body-burger--opened {
+    overflow: hidden;
+  }
   .message, .buttons-arrow, .buttons-message {
     bottom: 15%;
   }
@@ -1396,6 +1399,9 @@ input {
   }
 }
 @media (max-width: 700px) {
+  .body-burger--opened {
+    overflow: hidden;
+  }
   .message, .buttons-arrow, .buttons-message {
     bottom: 15%;
   }
@@ -3248,6 +3254,9 @@ input {
   }
 }
 @media (max-width: 700px) {
+  .body-burger--opened {
+    overflow: hidden;
+  }
   .message, .buttons-arrow, .buttons-message {
     bottom: 15%;
   }
@@ -4174,6 +4183,9 @@ input {
   }
 }
 @media (max-width: 700px) {
+  .body-burger--opened {
+    overflow: hidden;
+  }
   .message, .buttons-arrow, .buttons-message {
     bottom: 15%;
   }

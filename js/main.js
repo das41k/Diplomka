@@ -18,12 +18,14 @@ burgerIconTel.addEventListener('click', () => {
         header.classList.add('header-menu--open')
         acti.classList.add('telephone__acti--closed')
         titleMobile.classList.add('title-mobile--active')
+        document.body.classList.add('body-burger--opened')
     } else {
         burgerMenu.classList.remove('burger-menu--opened')
         kak.classList.remove('kak--closed')
         header.classList.remove('header-menu--open')
         acti.classList.remove('telephone__acti--closed')
         titleMobile.classList.remove('title-mobile--active')
+        document.body.classList.remove('body-burger--opened')
     }
 })
 const burgerMenuClose = document.querySelector('.burger-menu__cross')
