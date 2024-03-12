@@ -269,6 +269,9 @@
   .header-menu--open {
     background: rgb(81, 74, 126);
     overflow: hidden;
+    position: fixed;
+    z-index: 2;
+    inset: 0;
   }
   .nav {
     margin-bottom: 0px;
@@ -1419,6 +1422,9 @@ input {
   .header-menu--open {
     background: rgb(81, 74, 126);
     overflow: hidden;
+    position: fixed;
+    z-index: 2;
+    inset: 0;
   }
   .nav {
     margin-bottom: 0px;
@@ -2077,7 +2083,7 @@ input {
   bottom: 0%;
   right: 0%;
   left: 0%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .burger-menu {
@@ -3268,6 +3274,9 @@ input {
   .header-menu--open {
     background: rgb(81, 74, 126);
     overflow: hidden;
+    position: fixed;
+    z-index: 2;
+    inset: 0;
   }
   .nav {
     margin-bottom: 0px;
@@ -4191,6 +4200,9 @@ input {
   .header-menu--open {
     background: rgb(81, 74, 126);
     overflow: hidden;
+    position: fixed;
+    z-index: 2;
+    inset: 0;
   }
   .nav {
     margin-bottom: 0px;

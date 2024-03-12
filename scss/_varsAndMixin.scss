@@ -259,6 +259,9 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     .header-menu--open {
         background:rgb(81, 74, 126);
         overflow: hidden;
+        position: fixed;
+        z-index: 2;
+        inset: 0;
     }
     .nav {
         margin-bottom: 0px;
