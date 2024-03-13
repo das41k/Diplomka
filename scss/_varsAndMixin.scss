@@ -250,13 +250,6 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     }
     .buttons-arrow, .buttons-message {
         bottom: 15%;
-        visibility: hidden;
-        opacity: 0;
-        transition: $transition;
-    }
-    .buttons--scroll {
-        visibility: visible;
-        opacity: 1;
     }
     .header {
         background: url('../img/headerIMG/Rectangle\ 22.png') no-repeat fixed;

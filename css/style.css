@@ -251,14 +251,6 @@
   }
   .buttons-arrow, .buttons-message {
     bottom: 15%;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-  .buttons--scroll {
-    visibility: visible;
-    opacity: 1;
   }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
@@ -776,6 +768,8 @@ input {
   bottom: 5%;
   left: 2%;
   z-index: 2;
+  visibility: hidden;
+  opacity: 0;
 }
 .buttons-message {
   background: rgb(81, 74, 126);
@@ -797,6 +791,8 @@ input {
   bottom: 5%;
   right: 5%;
   z-index: 2;
+  visibility: hidden;
+  opacity: 0;
 }
 .buttons-message--close {
   opacity: 0;
@@ -812,6 +808,11 @@ input {
 }
 .buttons-message:hover path, .buttons-arrow:hover path {
   fill: rgb(81, 74, 126);
+}
+
+.buttons--scroll {
+  visibility: visible;
+  opacity: 1;
 }
 
 .message {
@@ -1418,14 +1419,6 @@ input {
   }
   .buttons-arrow, .buttons-message {
     bottom: 15%;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-  .buttons--scroll {
-    visibility: visible;
-    opacity: 1;
   }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
@@ -3284,14 +3277,6 @@ input {
   }
   .buttons-arrow, .buttons-message {
     bottom: 15%;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-  .buttons--scroll {
-    visibility: visible;
-    opacity: 1;
   }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
@@ -4224,14 +4209,6 @@ input {
   }
   .buttons-arrow, .buttons-message {
     bottom: 15%;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-  .buttons--scroll {
-    visibility: visible;
-    opacity: 1;
   }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;

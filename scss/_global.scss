@@ -31,6 +31,8 @@ input {
         bottom: 5%;
         left: 2%;
         z-index: 2;
+        visibility: hidden;
+        opacity: 0;
     }
     &-message {
         background: $color-button;
@@ -45,6 +47,8 @@ input {
         bottom: 5%;
         right: 5%;
         z-index: 2;
+        visibility: hidden;
+        opacity: 0;
     }
     &-message--close {
         opacity: 0;
@@ -60,6 +64,10 @@ input {
     &-message:hover path, &-arrow:hover path {
         fill: $color-button;
     }
+}
+.buttons--scroll {
+    visibility: visible;
+    opacity: 1;
 }
 .message {
     position: absolute;
