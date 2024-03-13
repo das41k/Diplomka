@@ -604,11 +604,14 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     .swiper-slide .reviews__slide-text {
         overflow: scroll;
     }
+    .invite {
+        &__question span {
+            font-size: 10px;
+        }
+
+    }
 }
 @media (max-width: 450px) {
-    .input-checkbox {
-        border-radius: 50%;
-    } 
     .swiper-slide__img img {
         width: 120%;
     }
@@ -623,6 +626,16 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     .modal__window {
         min-width: 200px;
     }
+    .invite {
+        &__question span {
+            font-size: 8px;
+            line-height: 118%;
+        }
+    }
+    .input-checkbox {
+        width: 7px;
+        height: 7px;
+    }
 }
 @media (max-width: 350px) {
     .accordion-list__control-title {
@@ -631,5 +644,15 @@ $main-border: 0.5px solid rgb(81, 74, 126);
     .pluse {
         display: flex;
         flex-direction: column;
+    }
+    .input-checkbox {
+        width: 5px;
+        height: 5px;
+    }
+    .invite {
+        &__question span {
+            font-size: 7px;
+            line-height: 118%;
+        }
     }
 }
