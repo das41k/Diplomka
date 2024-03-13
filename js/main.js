@@ -174,3 +174,16 @@ accordionListsMob.forEach(el => {
     });
 
 });
+
+window.addEventListener("scroll", function() {
+    const section = document.querySelector(".main__gallery");
+    const arrow = document.querySelector(".buttons-arrow"); 
+    const messageBut = document.querySelector('.buttons-message');
+    if (window.scrollY > section.offsetTop - window.innerHeight) {
+        arrow.classList.add("buttons--scroll");
+        messageBut.classList.add("buttons--scroll");
+    } else {
+        arrow.classList.remove("buttons--scroll");
+        messageBut.classList.remove("buttons--scroll");
+    }
+});

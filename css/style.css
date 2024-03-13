@@ -249,6 +249,17 @@
   .message, .buttons-arrow, .buttons-message {
     bottom: 15%;
   }
+  .buttons-arrow, .buttons-message {
+    bottom: 15%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .buttons--scroll {
+    visibility: visible;
+    opacity: 1;
+  }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
@@ -1404,6 +1415,17 @@ input {
   }
   .message, .buttons-arrow, .buttons-message {
     bottom: 15%;
+  }
+  .buttons-arrow, .buttons-message {
+    bottom: 15%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .buttons--scroll {
+    visibility: visible;
+    opacity: 1;
   }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
@@ -3260,6 +3282,17 @@ input {
   .message, .buttons-arrow, .buttons-message {
     bottom: 15%;
   }
+  .buttons-arrow, .buttons-message {
+    bottom: 15%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .buttons--scroll {
+    visibility: visible;
+    opacity: 1;
+  }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
     background-size: cover;
@@ -4188,6 +4221,17 @@ input {
   }
   .message, .buttons-arrow, .buttons-message {
     bottom: 15%;
+  }
+  .buttons-arrow, .buttons-message {
+    bottom: 15%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .buttons--scroll {
+    visibility: visible;
+    opacity: 1;
   }
   .header {
     background: url("../img/headerIMG/Rectangle 22.png") no-repeat fixed;
